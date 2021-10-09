@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+div {
+    color: white;
+    font-size: 1em;
+}
+
+.socialnav {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 50%;
+    height: 3%;
+    float: left;
+    background-color: transparent;
+}
+
+.icon-card1 {
+    width: 20%;
+    float: left;
+}
+
+.icon-card {
+    width: 20%;
+    float: left;
+    filter: none;
+}
+
+.icon-card a img:hover {
+    opacity: 0.5;
+    transition: .5s ease-in;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url(parking-lot-.jpg) #0f0f0f no-repeat center border-box;
+}
+
+header nav ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style-type: none;
+    overflow: hidden;
+    width: 50%;
+    background-color: transparent;
+    color: gainsboro;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+header button {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    background-color: dimgray;
+    color: white;
+    padding: 25px 50px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+header button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+header nav li a:hover {
+    color: dimgray;
+    transition: .5s ease-in;
+}
+
+header h1 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    color: darkgray;
+    font-size: 2em;
+}
+
+header p {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: white;
+    font-size: 1.3em;
+}
+
+header div.form {
+    display: inline-block;
+    background-color: black;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    border: 1px solid transparent;
+    border-radius: 5px 5px;
+}
+
+select {
+    width: 100%;
+    height: 10%;
+    padding: 1.5em 1.5em;
+    margin: 10px 10px;
+    background-color: darkgray;
+    border: 1px solid transparent;
+    border-radius: 3%;
+}
+
+input[type=range] {
+    appearance: none;
+    margin: 8px 0;
+    width: 60%;
+    margin-top: 5%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0 10 10 0 dimgray;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track:focus {
+    background-color: floralwhite;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: pink;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.button {
+    position: absolute;
+    right: 2%;
+    top: 65%;
+    width: 30%;
+    height: 30%;
+    background-color: aqua;
+    padding: 20px;
+    color: white;
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+div.select {
+    float: left;
+    width: 20%;
+    height: 10%;
+    margin-left: 10%;
+}
+
+div.range {
+    width: 80%;
+}
+
+.flex {
+    background-color: white;
+    width: 100vw;
+    height: 25vh;
+}
+
+.img-card {
+    width: 100vw;
+    height: 50vh;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.card {
+    width: 32.3%;
+    margin-left: 1%;
+    height: 100%;
+    float: left;
+}
+
+.text {
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: #524f4f83;
+    margin: 0;
+}
+
+.text h1 {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.507);
+}
+
+.text p {
+    font-size: 1em;
+    text-align: left;
+    color: #f5f1f1f5;
+    line-height: 0%;
+}
+
+.card:hover {
+    border-top: 2px solid red;
+}
+
+.about {
+    margin-top: 2%;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+}
+
+.aboutpic {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: url(/Nissan-Ariya-6.jpg) no-repeat;
+    background-size: cover;
+}
+
+.about-text {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+.about-text h1 {
+    text-align: left;
+    color: rgba(255, 0, 0, 0.507);
+    font-size: 1.8em;
+    color: black;
+}
+
+.about-text p {
+    text-align: left;
+    color: black;
+    text-align: left;
+    font-size: 1.2em;
+    word-wrap: break-word;
+}
+
+footer {
+    width: 100vw;
+    height: 45vh;
+    margin: 0;
+    background-color: black;
+}
+
+.footer-card {
+    margin-left: 2%;
+    float: left;
+    width: 23%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+}
