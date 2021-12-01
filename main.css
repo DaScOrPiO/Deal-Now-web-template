@@ -69,14 +69,14 @@ div {
     transition: .5s ease-in;
 }
 
-header {
+.page-head {
     width: 100vw;
     height: 100vh;
     position: relative;
     background: url(parking-lot-.jpg) #0f0f0f no-repeat center border-box;
 }
 
-header nav ul {
+.page-head ul {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -89,11 +89,11 @@ header nav ul {
     margin: 0;
 }
 
-header nav ul li {
+.page-head li {
     float: left;
 }
 
-header nav li a {
+.page-head li a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -102,7 +102,7 @@ header nav li a {
     text-align: left;
 }
 
-header button {
+.page-head button {
     position: absolute;
     left: 20%;
     top: 50%;
@@ -113,19 +113,19 @@ header button {
     border-radius: 12px 12px 12px 12px;
 }
 
-header button:hover {
+.page-head button:hover {
     background-color: black;
     color: white;
     cursor: pointer;
     transition: .5s ease-in;
 }
 
-header nav li a:hover {
+.page-head li a:hover {
     color: dimgray;
     transition: .5s ease-in;
 }
 
-header h1 {
+.page-head h1 {
     position: absolute;
     top: 25%;
     left: 20%;
@@ -136,7 +136,7 @@ header h1 {
     font-style: italic;
 }
 
-header p {
+.page-head p {
     position: absolute;
     top: 30%;
     left: 15%;
@@ -147,7 +147,7 @@ header p {
     font-weight: normal;
 }
 
-header div.form {
+.page-head div.form {
     display: inline-block;
     background-color: black;
     width: 50%;
@@ -228,6 +228,7 @@ div.range {
     background-color: white;
     width: 100vw;
     height: 25vh;
+    box-shadow: 8px 6px 6px 8px #3d3d3d;
 }
 
 .img-card {
@@ -252,7 +253,7 @@ div.range {
     background-color: #524f4f83;
     margin: 0;
     font-family: 'Karla';
-    font-size: 100;
+    font-size: 0.7em;
     font-style: normal;
     font-weight: normal;
 }

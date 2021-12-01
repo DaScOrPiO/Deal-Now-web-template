@@ -1,4 +1,4 @@
-div.header {
+.heading {
     height: 6vh;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@ div.header {
     background-color: #ffffff;
 }
 
-div.logo-space {
+.logo-space {
     flex: 10%;
     height: 6vh;
     align-items: center;
@@ -17,19 +17,19 @@ div.logo-space {
     background-color: rgb(151, 151, 153);
 }
 
-div.logo-space a {
+.logo-space a {
     text-decoration: none;
     border-bottom: 2px solid #000000;
     font-family: 'karla';
     color: #dadada;
 }
 
-div.logo-space a:hover {
+.logo-space a:hover {
     color: #070707;
     transition: .5s ease-in;
 }
 
-div.header-links {
+.header-links {
     flex: 80%;
     justify-content: flex-end;
     column-count: 1;
@@ -39,7 +39,7 @@ div.header-links {
     font-family: 'karla';
 }
 
-div.contact-bar {
+.contact-bar {
     position: absolute;
     display: flex;
     left: 50%;
@@ -48,7 +48,7 @@ div.contact-bar {
     font-size: 1.5em;
 }
 
-div.contact-bar:hover {
+.contact-bar:hover {
     color: #dadada;
     transition: .5s ease-in;
 }
@@ -112,12 +112,13 @@ div.text {
     height: 50vh;
     color: #ffffff;
     position: absolute;
+    font-size: 1rem;
 }
 
 div.text h1 {
     top: 0;
     left: 40%;
-    font-size: 2em;
+    font-size: 2rem;
     color: #000000;
 }
 
@@ -126,7 +127,7 @@ div.text h1 {
     background-color: #524f4f83;
 }
 
-div.footer {
+.footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -156,7 +157,7 @@ div.footer-card a {
     color: #000000;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.7em;
 }
 

@@ -1,4 +1,7 @@
-*{font-family: 'karla';}
+* {
+    font-family: 'karla';
+}
+
 .page-heading {
     width: 66vw;
     height: 50vh;
@@ -7,7 +10,8 @@
     box-shadow: 0px 3px 0px 0px rgb(173, 187, 173);
     overflow: hidden;
 }
-video{
+
+.video {
     width: 100%;
     height: 100%;
     min-width: 100%;
@@ -16,17 +20,19 @@ video{
     object-position: cover;
     object-fit: cover;
 }
-.nav-links{
+
+.nav-links {
     width: 66vw;
-    background-color: blue;
     position: relative;
     margin-top: 1%;
 }
-.links{
+
+.links {
     position: absolute;
-    width: 70%;
+    width: 100%;
     left: 25%;
 }
+
 .nav-links ul {
     margin: 0;
     padding: 0;
@@ -48,7 +54,8 @@ video{
     padding: 10px;
     border-right: 1px solid #272727;
 }
-.nav-links li a:last-child{
+
+.nav-links li a:last-child {
     border-right: none;
 }
 
@@ -67,8 +74,8 @@ video{
 }
 
 .blog-header {
-    width: 66vw;
-    height: 30vh;
+    width: 100%;
+    height: auto;
     background-color: rgb(61, 61, 61);
 }
 
@@ -78,36 +85,47 @@ video{
     object-fit: cover;
 }
 
-.blog-info {
+/*Space to insert blog topic & date*/
+.blog-discussion-topic {
     text-align: left;
     background-color: rgb(61, 61, 61);
     height: 20vh;
     overflow: hidden;
 }
 
-.blog-info>h1 {
-    text-decoration: underline;
+.blog-discussion-topic>h1 {
     font-size: 2em;
     font-style: italic;
     font-weight: bold;
 }
 
-.blog-info>p {
+.blog-discussion-topic>h1>a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.blog-discussion-topic>h1:hover>a:hover {
+    text-decoration: underline #f0f0f0;
+}
+
+.blog-discussion-topic>p {
     font-size: 1em;
 }
 
+/*Space to input blog article*/
 .blog-contents {
     padding: 5px;
     height: 90vh;
     background-color: #272727;
 }
 
-/*Space to input blog article*/
+/*Space to input discussion contents*/
 .blog-contents>p {
     font-size: 2.5em;
     line-height: 1.5em;
     word-break: break-all;
 }
+
 /*Space for other blog contents*/
 .sidebar {
     list-style-type: none;
@@ -132,30 +150,41 @@ video{
 .sidebar li a:hover {
     text-decoration: underline;
 }
-.blog-topic-contents{
+
+.blog-topic-contents {
     width: 100%;
     height: 20%;
     border-bottom: 1px solid #000000;
 }
-.blog-topic-contents:last-child{
+
+.blog-topic-contents:last-child {
     border-bottom: none;
 }
-.blog-topic{
+
+.blog-image {
     width: 30%;
     height: 100%;
     float: left;
 }
-.blog-topic > img{
+
+.blog-image>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.blog-body-content{
+
+.blog-body-content {
     width: 70%;
     height: 100%;
     float: right;
 }
-.blog-contents-header{
+
+.blog-body-content h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.sidebar-content-header {
     display: flex;
     margin-top: 5%;
     width: 100%;
@@ -163,15 +192,16 @@ video{
     background-color: #f0f0f0;
     color: #000000;
 }
-.blog-contents-header > h1{
+
+.sidebar-content-header>h1 {
     align-items: center;
     justify-content: center;
     align-content: center;
 }
-/* Do not tamper if not skilled enough as this determines the site behaviour on different devices*/
+
+/* Do not tamper with this area*/
 @media screen and (min-width: 1024px) {
     .sidebar {
         position: fixed;
     }
-
 }
