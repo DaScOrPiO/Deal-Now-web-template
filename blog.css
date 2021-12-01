@@ -1,0 +1,207 @@
+* {
+    font-family: 'karla';
+}
+
+.page-heading {
+    width: 66vw;
+    height: 50vh;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 3px 0px 0px rgb(173, 187, 173);
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-position: cover;
+    object-fit: cover;
+}
+
+.nav-links {
+    width: 66vw;
+    position: relative;
+    margin-top: 1%;
+}
+
+.links {
+    position: absolute;
+    width: 100%;
+    left: 25%;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 60%;
+    overflow: hidden;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'karla';
+    color: #0f0f0f;
+    text-align: left;
+    padding: 10px;
+    border-right: 1px solid #272727;
+}
+
+.nav-links li a:last-child {
+    border-right: none;
+}
+
+.nav-links li a:hover {
+    color: #949494;
+    transition: .5s ease-in;
+}
+
+.article-container {
+    width: 66vw;
+    float: left;
+    margin-right: 30%;
+    margin-top: 5%;
+    padding: 1 16px;
+    box-shadow: 8px 6px 16px 6px rgb(184, 187, 173);
+}
+
+.blog-header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(61, 61, 61);
+}
+
+.blog-header>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Space to insert blog topic & date*/
+.blog-discussion-topic {
+    text-align: left;
+    background-color: rgb(61, 61, 61);
+    height: 20vh;
+    overflow: hidden;
+}
+
+.blog-discussion-topic>h1 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blog-discussion-topic>h1>a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.blog-discussion-topic>h1:hover>a:hover {
+    text-decoration: underline #f0f0f0;
+}
+
+.blog-discussion-topic>p {
+    font-size: 1em;
+}
+
+/*Space to input blog article*/
+.blog-contents {
+    padding: 5px;
+    height: 90vh;
+    background-color: #272727;
+}
+
+/*Space to input discussion contents*/
+.blog-contents>p {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    word-break: break-all;
+}
+
+/*Space for other blog contents*/
+.sidebar {
+    list-style-type: none;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(134, 134, 134);
+    box-shadow: 8px 6px 16px 6px rgba(76, 77, 73);
+}
+
+.sidebar li a {
+    display: block;
+    color: #000000;
+    padding: 0px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+    text-decoration: underline;
+}
+
+.blog-topic-contents {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #000000;
+}
+
+.blog-topic-contents:last-child {
+    border-bottom: none;
+}
+
+.blog-image {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.blog-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-body-content {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.blog-body-content h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.sidebar-content-header {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: 10%;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.sidebar-content-header>h1 {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Do not tamper with this area*/
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        position: fixed;
+    }
+}
