@@ -342,9 +342,13 @@ footer {
     background-color: transparent;
     color: white;
     font-family: 'Karla';
-    font-size: 100;
+    font-size: 1em;
     font-style: normal;
     font-weight: normal;
 }
 
-/* ABOUT PAGE STYLESHEET */
+/* MEDIA QUERY STYLESHEET */
+
+@media screen and (min-width: 1024px){
+    
+}
