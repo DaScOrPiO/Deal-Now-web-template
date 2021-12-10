@@ -329,7 +329,7 @@ div.range {
     font-weight: normal;
 }
 
-footer {
+.foot {
     width: 100vw;
     height: 45vh;
     margin: 0;
@@ -362,7 +362,7 @@ footer {
         height: 50vh;
 
     }
-    footer{
+    .foot{
         width: 100vw;
         height: 45vh;
     }
@@ -446,7 +446,7 @@ footer {
         width: 100%;
         height: 60%;
     }
-    footer {
+    .foot {
         width: 100vw;
         height: 45vh;
     }
