@@ -186,3 +186,190 @@ div.footer-center {
     opacity: 0.3;
     transition: .5s ease-in;
 }
+
+/* Media Query */
+
+/* responsiveness for computers and larger screens */
+
+@media screen and (min-width: 1024px){
+    .heading {
+        width: 100vw;
+        height: 6vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    div.space-img {
+        width: 100vw;
+        height: 80vh;
+    }
+    div.image {
+        width: 100vw;
+        height: 165vh;
+        object-fit: cover;
+        position: relative;
+    }
+    div.text {
+        width: 100vw;
+        height: 50vh;
+        position: absolute;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 40vh;
+        column-count: 3;
+        column-rule: 1px solid darkgray;
+    }
+}
+
+/* General mobile responsiveness */
+
+@media screen and (max-width: 767px){
+    .heading {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo-space {
+        width: 100%;
+        flex: 10%;
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 10px;
+    }
+    .header-links {
+        width: 100%;
+        height: 70%;
+        flex: 20%;
+        flex-direction: column;
+        column-count: 1;
+        column-rule: solid black;
+        background-color: #252431;
+        position: relative;
+    }
+    .header-links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 5%;
+    }
+    .contact-bar {
+        position: absolute;
+        display: flex;
+        left: 50%;
+        top: 20%;
+    }
+    .space-img{
+        display: none;
+    }
+    div.image {
+        width: 100vw;
+        height: 400vh;
+        background: url(/40435.jpg);
+        object-fit: cover;
+        position: relative;
+    }
+    div.text {
+        width: 100vw;
+        height: 50%;
+        position: absolute;
+        font-size: 1rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 40vh;
+        column-count: 3;
+    }
+    div.footer-card {
+        width: 40%;
+        height: 40vh;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+/* Responsiveness for Ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .heading {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo-space {
+        width: 100%;
+        flex: 10%;
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 10px;
+    }
+    .header-links {
+        width: 100%;
+        height: 70%;
+        flex: 20%;
+        flex-direction: column;
+        column-count: 1;
+        column-rule: solid black;
+        background-color: #252431;
+        position: relative;
+    }
+    .header-links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 5%;
+    }
+    .contact-bar {
+        position: absolute;
+        display: flex;
+        left: 50%;
+        top: 20%;
+    }
+    .space-img{
+        display: none;
+    }
+    div.image {
+        width: 100vw;
+        height: 175vh;
+        background: url(/40435.jpg);
+        object-fit: cover;
+        position: relative;
+    }
+    div.text {
+        width: 100vw;
+        height: 50%;
+        position: absolute;
+        font-size: 1rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 40vh;
+        column-count: 3;
+    }
+    div.footer-card {
+        width: 40%;
+        height: 40vh;
+        flex-direction: column;
+        position: relative;
+    }
+}

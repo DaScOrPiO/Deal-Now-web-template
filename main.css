@@ -4,6 +4,7 @@
 * img{
     max-width: 100%;
     height: auto;
+    background-size: cover;
 }
 
 .clearfix:after {
@@ -234,6 +235,7 @@ div.range {
 .img-card {
     width: 100vw;
     height: 50vh;
+    margin-top: 20%;
     overflow-y: hidden;
     background-color: white;
     object-fit: cover;
@@ -327,7 +329,7 @@ div.range {
     font-weight: normal;
 }
 
-footer {
+.foot {
     width: 100vw;
     height: 45vh;
     margin: 0;
@@ -342,9 +344,110 @@ footer {
     background-color: transparent;
     color: white;
     font-family: 'Karla';
-    font-size: 100;
+    font-size: 1em;
     font-style: normal;
     font-weight: normal;
 }
 
-/* ABOUT PAGE STYLESHEET */
+/* MEDIA QUERY STYLESHEET */
+
+@media screen and (min-width: 1024px){
+    .page-head{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .img-card, .about{
+        width: 100vw;
+        height: 50vh;
+
+    }
+    .foot{
+        width: 100vw;
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 950px) {
+    .page-head{
+        width: 100vw;
+        height: 50vh;
+    }
+    .page-head h1 {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+    }
+    .page-head p {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+    .socialnav{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+    }
+    .page-head button {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        left: 30%;
+    }
+    .page-head ul {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .page-head div.form {
+        display: inline-block;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        bottom: -60%;
+        left: 0%;
+    }
+    .img-card {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 50%;
+        display: block;
+        overflow: hidden;
+    }
+    .card {
+        width: 100%;
+        height: 32.1%;
+        float: none;
+    }
+    .text {
+        width: 100%;
+        height: 20%;
+        margin: 0;
+    }
+    .card img{
+        width: 100%;
+        height: 80%;
+        background-size: cover;
+    }
+    .about {
+        margin-top: 2%;
+        width: 100vw;
+        height: 150vh;
+        display: block;
+    }
+    .aboutpic {
+        width: 100%;
+        height: 40%;
+    }
+    .about-text {
+        width: 100%;
+        height: 60%;
+    }
+    .foot {
+        width: 100vw;
+        height: 45vh;
+    }
+}
