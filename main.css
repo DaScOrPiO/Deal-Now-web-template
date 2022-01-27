@@ -43,11 +43,21 @@ div {
     color: white;
     font-size: 1em;
 }
+.socialnav-container{
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    left: 15%;
+    position: relative;
+    box-shadow: 2px 4px 6px 4px #c0bfbc, inset 4px 2px 3px 2px #706d6d;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+}
 
 .socialnav {
     position: absolute;
-    top: 43%;
-    left: 15%;
+    top: 20%;
+    left: 30%;
     width: 50%;
     height: 3%;
     float: left;
@@ -98,19 +108,21 @@ div {
     display: block;
     padding: 10px;
     text-decoration: none;
-    font-family: 'karla';
+    font-family: 'karla', sans-serif;
     color: white;
     text-align: left;
 }
 
 .page-head button {
+    width: 20%;
+    height: 10%;
     position: absolute;
-    left: 20%;
+    left: 30%;
     top: 50%;
     background-color: dimgray;
-    font-family: 'karla';
+    font-family: 'karla', sans-serif;
     color: white;
-    padding: 25px 50px;
+    padding: 10px 20px;
     border-radius: 12px 12px 12px 12px;
 }
 
@@ -129,21 +141,21 @@ div {
 .page-head h1 {
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: 30%;
     color: darkgray;
     font-size: 2em;
-    font-family: 'Karla';
+    font-family: 'Karla', sans-serif;
     font-weight: bold;
     font-style: italic;
 }
 
 .page-head p {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 15%;
     color: white;
     font-size: 1.3em;
-    font-family: 'Karla';
+    font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -152,12 +164,13 @@ div {
     display: inline-block;
     background-color: black;
     width: 50%;
-    height: 200px;
+    height: 25%;
     position: absolute;
     bottom: -15%;
     left: 0%;
     border: 1px solid transparent;
     border-radius: 5px 5px;
+    box-shadow: 4px 8px 16px 4px #3d3d3d;
 }
 
 select {
@@ -167,7 +180,7 @@ select {
     margin: 10px 10px;
     background-color: darkgray;
     border: 1px solid transparent;
-    border-radius: 3%;
+    border-radius: 18px;
 }
 
 input[type=range] {
@@ -175,43 +188,49 @@ input[type=range] {
     margin: 8px 0;
     width: 60%;
     margin-top: 5%;
+    background-color: #f4fde8;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 2px;
-    box-shadow: 0 10 10 0 dimgray;
+    background-color: #faf6ef;
+    border: 1px solid transparent;
+    border-radius: 30px !important;
+    box-shadow: 0px 0px 0px 0px dimgray;
     cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-runnable-track:focus {
-    background-color: floralwhite;
+    background-color: white;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    background-color: pink;
+    background-color: dimgray !important;
     border: 1px solid transparent;
     border-radius: 50%;
     width: 10px;
     height: 10px;
 }
+input[type=range]::-webkit-slider-thumb:hover{
+    background-color: darkgrey !important;
+}
 
-.button {
+input[type=submit] {
     position: absolute;
     right: 2%;
     top: 65%;
     width: 30%;
     height: 30%;
-    background-color: aqua;
-    padding: 20px;
-    color: white;
+    background-color: #d3e4e9;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #7a7a7a;
 }
 
-.button:hover {
+input[type=submit]:hover {
     background-color: red;
     color: white;
     cursor: pointer;
+    transition: .8s ease;
 }
 
 div.select {
@@ -246,16 +265,17 @@ div.range {
     margin-left: 1%;
     height: 100%;
     float: left;
+    box-shadow: 2px 4px 4px 2px #414141, 2px 4px 4px 2px #6e1e09b6;
 }
 
 .text {
     width: 100%;
-    height: 20%;
+    height: 35%;
     color: white;
     background-color: #524f4f83;
     margin: 0;
     font-family: 'Karla';
-    font-size: 0.7em;
+    font-size: 1.2em;
     font-style: normal;
     font-weight: normal;
 }
@@ -278,6 +298,7 @@ div.range {
 
 .card:hover {
     border-top: 2px solid red;
+    transition: .5s ease-in;
 }
 
 .about {
@@ -293,6 +314,7 @@ div.range {
     float: right;
     background: url(/Nissan-Ariya-6.jpg) no-repeat;
     background-size: cover;
+    box-shadow: 1px 2px 2px 2px #414141;
 }
 
 .about-text {
@@ -300,10 +322,17 @@ div.range {
     height: 100%;
     float: left;
     background-color: white;
-    font-family: 'Karla';
-    font-size: 100;
+    font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: normal;
+}
+.about-text a{
+    color: #080808;
+    text-decoration: none;
+}
+.about-text a:hover{
+    transition: .6s ease-in;
+    color: #3d3d3d;
 }
 
 .about-text h1 {
@@ -351,6 +380,7 @@ div.range {
 
 /* MEDIA QUERY STYLESHEET */
 
+/* LARGE SCREEN SIZES */
 @media screen and (min-width: 1024px){
     .page-head{
         width: 100vw;
@@ -368,33 +398,35 @@ div.range {
     }
 }
 
-@media screen and (min-width: 250px) and (max-width: 950px) {
+/* MEDIUM SCREENS SIZES */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .page-head{
         width: 100vw;
         height: 50vh;
     }
     .page-head h1 {
         position: absolute;
-        top: 15%;
-        left: 20%;
+        top: 35%;
+        left: 30%;
     }
     .page-head p {
         position: absolute;
-        top: 25%;
-        left: 15%;
+        top: 45%;
+        left: 10%;
     }
     .socialnav{
         width: 100%;
         height: 10%;
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 25%;
     }
     .page-head button {
         position: absolute;
         left: 20%;
-        top: 50%;
-        left: 30%;
+        top: 60%;
+        left: 40%;
+        padding: 5px 10px;
     }
     .page-head ul {
         position: absolute;
@@ -414,17 +446,24 @@ div.range {
         width: 100vw;
         height: 100vh;
         margin-top: 50%;
-        display: block;
+        display: inline-block;
         overflow: hidden;
     }
     .card {
-        width: 100%;
-        height: 32.1%;
-        float: none;
+        width: 45%;
+        height: 40%;
+        float: left;
+        margin-left: 3%;
+    }
+    .card:last-child{
+        margin-top: 3%;
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-top: 12%;
     }
     .text {
         width: 100%;
-        height: 20%;
+        height: 40%;
         margin: 0;
     }
     .card img{
@@ -435,19 +474,128 @@ div.range {
     .about {
         margin-top: 2%;
         width: 100vw;
-        height: 150vh;
+        height: 80vh;
         display: block;
     }
     .aboutpic {
         width: 100%;
-        height: 40%;
+        height: 50%;
     }
     .about-text {
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
     .foot {
         width: 100vw;
         height: 45vh;
     }
 }
+
+/* SMALL SCREEN SIZES */
+@media screen and (max-width:767px){
+    .page-head{
+        width: 100vw;
+        height: 50vh;
+    }
+    .socialnav-container{
+        width: 60%;
+        height: 60%;
+        box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
+        backdrop-filter: blur(-0px);
+    }
+    .page-head h1 {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+    }
+    .page-head p {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    .socialnav{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+    .page-head button {
+        visibility: hidden;
+    }
+    .page-head ul {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .page-head div.form {
+        display: inline-block;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+    div.select{
+        width: 25%;
+        margin-left: 5%;
+    }
+    input[type=range]{
+        width: 40%;
+    }
+    div.range{
+        display: block;
+        width: 60%;
+        height: 10%;
+    }
+    input[type=submit]{
+        position: absolute;
+        right: 20%;
+        padding: 5px 10px;
+    }
+    .img-card {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 50%;
+        display: block;
+        overflow: hidden;
+    }
+    .card {
+        width: 100%;
+        height: 33.3%;
+        float: none;
+    }
+    .text {
+        width: 100%;
+        height: 40%;
+        margin: 0;
+    }
+    .card img{
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+    }
+    .about {
+        margin-top: 2%;
+        width: 100vw;
+        height: 150vh;
+        display: block;
+    }
+    .aboutpic {
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-position-x: right;
+    }
+    .about-text {
+        width: 100%;
+        height: 40%;
+    }
+    .foot {
+        width: 100vw;
+        height: 45vh;
+    }
+}
+
+/* END OF STYLESHEET */
