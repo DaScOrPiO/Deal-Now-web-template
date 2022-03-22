@@ -1,0 +1,174 @@
+*{box-sizing: border-box;}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: karla, sans-serif;
+}
+@font-face {
+    font-family: karla, sans-serif;
+    src: url(/Fonts/Karla-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: karla, sans-serif;
+    src: url(/Fonts/Karla-Bold.ttf);
+    font-weight: 700;
+}
+.form-page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    width: 80vh;
+    height: 75vh;
+    backdrop-filter: blur(40px);
+    box-shadow: 2px 2px 4px 4px #f0ebeb;
+}
+.our-info{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    margin: 2%;
+    padding: 10px;
+}
+.message-writting{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+.message img{
+    max-width: 20%;
+    max-height: 50%;
+}
+.message h1{
+    font-size: 1.3em;
+    color: white;
+    font-weight: 700;
+    font-family: karla, sans-serif;
+    font-weight: 700;
+}
+.message h3{
+    font-size: 0.8em;
+    color: white;
+    font-family: karla, sans-serif;
+    font-weight: 100;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.form h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-family: karla, sans-serif;
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    background: url(contact.jpg) no-repeat center/cover;
+}
+input[type=text], [type=email], [type=file]{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 4em;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+input[type=text]:focus, [type=email]:focus{
+    outline: none;
+    width: 100%;
+    transition: .6s ease-in;
+}
+input[type=submit]{
+    width: 30%;
+    height: 10%;
+    padding: 5px 5px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    background-color: #d3e4e9;
+    color: white;
+    cursor: pointer;
+    transition: .8s ease;
+    transform: translateY(-0.25em);
+}
+input[type=file]{
+    color: white;
+}
+.label{
+    margin-top: 2%;
+    color: white;
+}
+textarea{
+    resize: none;
+    width: 100%;
+}
+textarea:focus{
+    outline: none;
+}
+.material-icons{
+    font-size: 32px;
+    color: whitesmoke;
+}
+.link-icon{
+    font-size: 32px;
+    color: whitesmoke;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    text-decoration: none;
+}
+.link-icon:hover{
+    color: white;
+    transform: translateX(0.25em);
+    transition: .4s ease-in;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .form-page{
+        flex-direction: column;
+        height: 90%;
+    }
+    .our-info, .form{
+        width: 100%;
+        height: 50%;
+    }
+    .container{
+        width: 100vw;
+        height: 130vh;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .form-page{
+        flex-direction: column;
+        height: 90%;
+    }
+    .our-info, .form{
+        width: 100%;
+        height: 50%;
+    }
+    .container{
+        width: 100vw;
+        height: 130vh;
+    }
+
+}

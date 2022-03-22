@@ -1,64 +1,36 @@
 .heading {
-    height: 6vh;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     background-color: #ffffff;
 }
 
-.logo-space {
-    flex: 20%;
-    height: 6vh;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-size: 2em;
-    padding: 4px 10px;
+li.logo-space {
+    width: 5%;
+    height: 100%;
+    border-radius: 50%;
     background-color: rgb(151, 151, 153);
-}
-
-.logo-space a {
-    text-decoration: none;
-    border-bottom: 2px solid #000000;
-    font-family: 'karla';
-    color: #dadada;
-}
-
-.logo-space a:hover {
-    color: #070707;
-    transition: .5s ease-in;
+    background: url(logo.png) center/cover;
 }
 
 .header-links {
-    flex: 80%;
-    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    height: 100%;
     background-color: #252431;
-    position: relative;
     font-family: 'karla', sans-serif;
 }
 
-.contact-bar {
-    position: absolute;
-    display: flex;
-    left: 50%;
-    top: 20%;
-    color: #dadada;
-    font-size: 1.5em;
-}
-
-.contact-bar:hover {
-    color: #a5a5a5;
-    transition: .5s ease-in;
-}
-
 .header-links ul {
+    display: flexbox;
+    flex-grow: 2;
     margin: 0;
     padding: 0;
     list-style: none;
     width: 100%;
+    height: 100%;
     overflow: hidden;
-    position: absolute;
-    left: 20%;
 }
 
 .header-links li {
@@ -71,17 +43,19 @@
     color: #dadada;
     text-align: left;
     font-size: 1.5em;
-    padding: 10px 20px;
+    padding: 20px 150px;
 }
 
 .header-links li a:hover {
-    color: #a5a5a5;;
+    color: #a5a5a5;
+    ;
     transition: all .5s ease-in;
     text-decoration: underline;
 }
-.main-container{
+
+.main-container {
     width: 100vw;
-    height: 200vh;
+    height: auto;
 }
 
 div.space-img>img {
@@ -102,29 +76,26 @@ div.image {
     height: 60%;
     background: url(/40435.jpg);
     object-fit: cover;
-    position: relative;
 }
 
 div.text {
     width: 100%;
     height: 100%;
     color: #ffffff;
-    position: absolute;
     font-size: 15px;
 }
 
 div.text h1 {
-    top: 0;
-    left: 40%;
     font-size: 4rem;
     color: #000000;
 }
 
 .text>p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #524f4f83;
 }
-.text>p:nth-child(2){
+
+.text>p:nth-child(2) {
     word-wrap: break-word;
 }
 
@@ -132,18 +103,15 @@ div.text h1 {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 40vh;
-    column-count: 3;
-    column-rule: 1px solid darkgray;
+    height: 50vh;
     background-color: #252431;
 }
 
 div.footer-card {
     width: 33.3%;
-    height: 40vh;
+    height: 100%;
     flex-direction: column;
-    background-color: rgb(124, 10, 10);
-    position: relative;
+    background-color: #252431;
 }
 
 div.footer-card h1 {
@@ -155,7 +123,7 @@ div.footer-card h1 {
 
 div.footer-card a {
     display: flex;
-    color: #000000;
+    color: rgb(128, 128, 128);
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
     font-size: 1.5em;
@@ -163,15 +131,8 @@ div.footer-card a {
 }
 
 div.footer-card a:hover {
-    color: rgb(128, 128, 128);
+    color: #000000;
     transition: .5s ease-in;
-}
-
-div.footer-center {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 10%;
 }
 
 .icon-card3 {
@@ -188,129 +149,225 @@ div.footer-center {
     transition: .5s ease-in;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 3em;
+    user-select: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close {
+    display: none;
+    font-size: 3em;
+    user-select: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.link-items {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Media Query */
 
 /* responsiveness for computers and larger screens */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     .heading {
         width: 100vw;
-        height: 6vh;
+        height: 10vh;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
-    .main-container{
+
+    ul li.logo-space {
+        width: 5%;
+        height: 100%;
+        background-color: rgb(151, 151, 153);
+    }
+
+    .header-links {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #252431;
+    }
+
+    .main-container {
         width: 100vw;
-        height: 200vh;
     }
+
     div.space-img {
         width: 100%;
         height: 40%;
     }
+
     div.image {
         width: 100vw;
-        height: 60%;
         object-fit: cover;
-        position: relative;
     }
+
     div.text {
         width: 100%;
         height: 100%;
-        position: absolute;
     }
+
     .footer {
         display: flex;
         flex-direction: row;
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
     }
-    .footer-card:nth-child(2){
+
+    .footer-card:nth-child(2) {
         column-count: 2;
         column-rule: 1px solid black;
     }
-    
+
+    .footer-card:nth-child(3) {
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
 
 /* General mobile responsiveness */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .heading {
         width: 100vw;
-        height: 12vh;
+        height: 10vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        overflow: hidden;
     }
-    .logo-space {
-        width: 100%;
-        flex: 10%;
-        height: 30%;
+
+    li.logo-space {
+        width: 20%;
+        height: 100%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 4px 10px;
     }
+
     .header-links {
         width: 100%;
-        height: 70%;
-        flex: 20%;
+        height: 100%;
         flex-direction: column;
-        background-color: #252431;
-        position: relative;
+        overflow: hidden;
     }
+
     .header-links ul {
         margin: 0;
         padding: 0;
         list-style: none;
         width: 100%;
+        height: 100%;
         overflow: hidden;
-        position: absolute;
-        left: 5%;
+        padding: 2em 4em;
     }
-    .contact-bar {
-        position: absolute;
-        display: flex;
-        left: 50%;
-        top: 20%;
+
+    .header-links li a {
+        font-size: 0.8em;
+        padding: 2em 12em;
     }
-    .main-container{
+
+    .main-container {
         width: 100vw;
-        height: 100vh;
     }
-    .space-img{
+
+    .space-img {
         display: none;
     }
+
     div.image {
         width: 100%;
         height: 100%;
         background: url(/40435.jpg);
         object-fit: cover;
-        position: relative;
     }
+
     div.text {
         width: 100%;
         height: 100%;
-        position: absolute;
     }
-    div.text h1{
+
+    div.text h1 {
         font-size: 2.3rem;
     }
-    div.text p{
+
+    div.text p {
         font-size: 1.2rem;
     }
+
     .footer {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 90vh;
+        height: 150vh;
         column-count: 3;
     }
+
     div.footer-card {
         width: 100%;
         height: 33.3%;
         flex-direction: column;
     }
+
+    div.footer-card:nth-child(3) {
+        flex-direction: row;
+        padding-top: 4em;
+    }
+
+    .link-items {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        top: 0%;
+        right: 0;
+        left: 0;
+        text-align: center;
+        backdrop-filter: blur(50px);
+    }
+
+    .close {
+        display: none;
+    }
+
+    .link-items li:hover {
+        display: block;
+        background-color: transparent;
+        transition: 10s ease-in-out;
+    }
+
+    input[type=checkbox]:checked~.link-items {
+        display: block;
+        opacity: 0.8;
+        z-index: 1;
+    }
+
+    input[type=checkbox]:checked~.hamburger {
+        visibility: hidden;
+    }
+
+    input[type=checkbox]:checked~.close {
+        display: block;
+        z-index: 2;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
 }
 
 /* Responsiveness for Ipad */
@@ -318,58 +375,51 @@ div.footer-center {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .heading {
         width: 100vw;
-        height: 12vh;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
     }
-    .logo-space {
-        width: 100%;
-        flex: 10%;
-        height: 30%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 4px 10px;
+
+    li.logo-space {
+        width: 15%;
+        height: 100%;
     }
+
     .header-links {
+        display: flex;
         width: 100%;
-        height: 70%;
-        flex: 20%;
-        flex-direction: column;
-        column-count: 1;
-        column-rule: solid black;
+        height: 100%;
         background-color: #252431;
-        position: relative;
     }
+
     .header-links ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        width: 100%;
+        width: 85%;
+        height: 100%;
         overflow: hidden;
-        position: absolute;
-        left: 5%;
     }
-    .contact-bar {
-        position: absolute;
-        display: flex;
-        left: 50%;
-        top: 20%;
+
+    .header-links li a {
+        font-size: 1em;
     }
-    .main-container{
+
+    .main-container {
         width: 100vw;
         height: 100vh;
     }
-    .space-img{
+
+    .space-img {
         width: 100%;
         height: 40%;
     }
-    .space-img img{
+
+    .space-img img {
         max-width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     div.image {
         width: 100%;
         height: 60%;
@@ -377,17 +427,21 @@ div.footer-center {
         object-fit: cover;
         position: relative;
     }
+
     div.text {
         width: 100%;
         height: 100%;
         position: absolute;
     }
-    div.text h1{
+
+    div.text h1 {
         font-size: 2.3rem;
     }
-    div.text p{
+
+    div.text p {
         font-size: 1.2rem;
     }
+
     .footer {
         display: flex;
         flex-direction: row;
@@ -395,10 +449,16 @@ div.footer-center {
         height: 40vh;
         column-count: 3;
     }
+
     div.footer-card {
         width: 40%;
         height: 40vh;
         flex-direction: column;
         position: relative;
+    }
+
+    .footer-card:nth-child(3) {
+        flex-direction: row;
+        align-items: center;
     }
 }

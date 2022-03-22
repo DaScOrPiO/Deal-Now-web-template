@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
 }
-* img{
+
+* img {
     max-width: 100%;
     height: auto;
     background-size: cover;
@@ -43,7 +44,8 @@ div {
     color: white;
     font-size: 1em;
 }
-.socialnav-container{
+
+.socialnav-container {
     width: 50%;
     height: 60%;
     top: 20%;
@@ -51,7 +53,7 @@ div {
     position: relative;
     box-shadow: 2px 4px 6px 4px #c0bfbc, inset 4px 2px 3px 2px #706d6d;
     border-radius: 16px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
 }
 
 .socialnav {
@@ -134,14 +136,14 @@ div {
 }
 
 .page-head li a:hover {
-    color: dimgray;
+    color: darkgrey;
     transition: .5s ease-in;
 }
 
 .page-head h1 {
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 25%;
     color: darkgray;
     font-size: 2em;
     font-family: 'Karla', sans-serif;
@@ -162,7 +164,6 @@ div {
 
 .page-head div.form {
     display: inline-block;
-    background-color: black;
     width: 50%;
     height: 25%;
     position: absolute;
@@ -170,15 +171,16 @@ div {
     left: 0%;
     border: 1px solid transparent;
     border-radius: 5px 5px;
-    box-shadow: 4px 8px 16px 4px #3d3d3d;
+    box-shadow: 4px 8px 16px 4px #3d3d3d, 2px 4px 6px 4px #c0bfbc;
+    backdrop-filter: blur(20px);
 }
 
-select {
+select, option {
     width: 100%;
     height: 10%;
     padding: 1.5em 1.5em;
     margin: 10px 10px;
-    background-color: darkgray;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: 18px;
 }
@@ -188,11 +190,16 @@ input[type=range] {
     margin: 8px 0;
     width: 60%;
     margin-top: 5%;
-    background-color: #f4fde8;
+    border-radius: 50%;
+}
+
+label[for=price] {
+    color: rgb(51, 51, 51);
+    font-weight: 700;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    background-color: #faf6ef;
+    background-color: black;
     border: 1px solid transparent;
     border-radius: 30px !important;
     box-shadow: 0px 0px 0px 0px dimgray;
@@ -204,13 +211,14 @@ input[type=range]::-webkit-slider-runnable-track:focus {
 }
 
 input[type=range]::-webkit-slider-thumb {
-    background-color: dimgray !important;
+    background-color: dimgray;
     border: 1px solid transparent;
     border-radius: 50%;
     width: 10px;
     height: 10px;
 }
-input[type=range]::-webkit-slider-thumb:hover{
+
+input[type=range]::-webkit-slider-thumb:hover {
     background-color: darkgrey !important;
 }
 
@@ -220,14 +228,14 @@ input[type=submit] {
     top: 65%;
     width: 30%;
     height: 30%;
-    background-color: #d3e4e9;
+    background-color: red;
     border-radius: 20px;
     padding: 10px 20px;
-    color: #7a7a7a;
+    color: white;
 }
 
 input[type=submit]:hover {
-    background-color: red;
+    background-color: #d3e4e9;
     color: white;
     cursor: pointer;
     transition: .8s ease;
@@ -241,7 +249,7 @@ div.select {
 }
 
 div.range {
-    width: 80%;
+    width: 70%;
 }
 
 .flex {
@@ -256,8 +264,12 @@ div.range {
     height: 50vh;
     margin-top: 20%;
     overflow-y: hidden;
-    background-color: white;
+    box-shadow: 2px 2px 6px 4px #3d3d3d, 2px 2px 6px 4px #c0bfbc;
     object-fit: cover;
+}
+
+.img-card a {
+    text-decoration: none;
 }
 
 .card {
@@ -265,6 +277,7 @@ div.range {
     margin-left: 1%;
     height: 100%;
     float: left;
+    background-color: #31312e;
     box-shadow: 2px 4px 4px 2px #414141, 2px 4px 4px 2px #6e1e09b6;
 }
 
@@ -272,18 +285,19 @@ div.range {
     width: 100%;
     height: 35%;
     color: white;
-    background-color: #524f4f83;
     margin: 0;
     font-family: 'Karla';
     font-size: 1.2em;
     font-style: normal;
     font-weight: normal;
+    box-shadow: 2px 4px 4px 2px #2c2c2c, 2px 4px 4px 2px #292929b6;
+    backdrop-filter: blur(500px);
 }
 
 .text h1 {
     font-size: 1.2em;
     text-align: center;
-    color: rgba(255, 0, 0, 0.507);
+    color: red;
     font-family: 'Karla';
 }
 
@@ -325,12 +339,16 @@ div.range {
     font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: normal;
+    box-shadow: 4px 8px 16px 4px #3d3d3d 2px 4px 6px 4px #c0bfbc;
+    backdrop-filter: blur(20px);
 }
-.about-text a{
+
+.about-text a {
     color: #080808;
     text-decoration: none;
 }
-.about-text a:hover{
+
+.about-text a:hover {
     transition: .6s ease-in;
     color: #3d3d3d;
 }
@@ -376,23 +394,41 @@ div.range {
     font-size: 1em;
     font-style: normal;
     font-weight: normal;
+    display: flex;
+}
+
+.footer-card-caption img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.footer-card-caption {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
 
 /* MEDIA QUERY STYLESHEET */
 
 /* LARGE SCREEN SIZES */
-@media screen and (min-width: 1024px){
-    .page-head{
+@media screen and (min-width: 1024px) {
+    .page-head {
         width: 100vw;
         height: 100vh;
         position: relative;
     }
-    .img-card, .about{
+
+    .img-card, .about {
         width: 100vw;
         height: 50vh;
 
     }
-    .foot{
+
+    .foot {
         width: 100vw;
         height: 45vh;
     }
@@ -400,27 +436,31 @@ div.range {
 
 /* MEDIUM SCREENS SIZES */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .page-head{
+    .page-head {
         width: 100vw;
         height: 50vh;
     }
+
     .page-head h1 {
         position: absolute;
         top: 35%;
         left: 30%;
     }
+
     .page-head p {
         position: absolute;
         top: 45%;
         left: 10%;
     }
-    .socialnav{
+
+    .socialnav {
         width: 100%;
         height: 10%;
         position: absolute;
         top: 30%;
         left: 25%;
     }
+
     .page-head button {
         position: absolute;
         left: 20%;
@@ -428,12 +468,14 @@ div.range {
         left: 40%;
         padding: 5px 10px;
     }
+
     .page-head ul {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 100%;
     }
+
     .page-head div.form {
         display: inline-block;
         width: 100%;
@@ -442,6 +484,7 @@ div.range {
         bottom: -60%;
         left: 0%;
     }
+
     .img-card {
         width: 100vw;
         height: 100vh;
@@ -449,42 +492,49 @@ div.range {
         display: inline-block;
         overflow: hidden;
     }
+
     .card {
-        width: 45%;
-        height: 40%;
-        float: left;
-        margin-left: 3%;
+        width: 60%;
+        height: 25%;
+        margin: auto
     }
-    .card:last-child{
+
+    .card:last-child {
         margin-top: 3%;
         margin-left: 15%;
         margin-right: 5%;
         margin-top: 12%;
     }
+
     .text {
         width: 100%;
         height: 40%;
         margin: 0;
     }
-    .card img{
+
+    .card img {
         width: 100%;
         height: 80%;
         background-size: cover;
     }
+
     .about {
         margin-top: 2%;
         width: 100vw;
         height: 80vh;
         display: block;
     }
+
     .aboutpic {
         width: 100%;
         height: 50%;
     }
+
     .about-text {
         width: 100%;
         height: 50%;
     }
+
     .foot {
         width: 100vw;
         height: 45vh;
@@ -492,43 +542,54 @@ div.range {
 }
 
 /* SMALL SCREEN SIZES */
-@media screen and (max-width:767px){
-    .page-head{
+@media screen and (max-width:767px) {
+    .page-head {
         width: 100vw;
         height: 50vh;
     }
-    .socialnav-container{
+
+    .socialnav-container {
         width: 60%;
         height: 60%;
         box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
         backdrop-filter: blur(-0px);
     }
+
     .page-head h1 {
         position: absolute;
         top: 15%;
         left: 20%;
     }
+
     .page-head p {
         position: absolute;
-        top: 30%;
+        top: 45%;
         left: 15%;
     }
-    .socialnav{
+
+    .socialnav {
         width: 100%;
         height: 10%;
         position: absolute;
         top: 10%;
         left: 25%;
     }
+
     .page-head button {
         visibility: hidden;
     }
+
     .page-head ul {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 100%;
     }
+
+    .page-head li a {
+        font-size: 0.8em;
+    }
+
     .page-head div.form {
         display: inline-block;
         width: 100%;
@@ -537,23 +598,28 @@ div.range {
         top: 100%;
         left: 0%;
     }
-    div.select{
+
+    div.select {
         width: 25%;
         margin-left: 5%;
     }
-    input[type=range]{
+
+    input[type=range] {
         width: 40%;
     }
-    div.range{
+
+    div.range {
         display: block;
         width: 60%;
         height: 10%;
     }
-    input[type=submit]{
+
+    input[type=submit] {
         position: absolute;
         right: 20%;
         padding: 5px 10px;
     }
+
     .img-card {
         width: 100vw;
         height: 100vh;
@@ -561,37 +627,44 @@ div.range {
         display: block;
         overflow: hidden;
     }
+
     .card {
         width: 100%;
         height: 33.3%;
         float: none;
     }
+
     .text {
         width: 100%;
         height: 40%;
         margin: 0;
     }
-    .card img{
+
+    .card img {
         width: 100%;
         height: 60%;
         background-size: cover;
     }
+
     .about {
         margin-top: 2%;
         width: 100vw;
         height: 150vh;
         display: block;
     }
+
     .aboutpic {
         width: 100%;
         height: 60%;
         background-size: cover;
         background-position-x: right;
     }
+
     .about-text {
         width: 100%;
         height: 40%;
     }
+
     .foot {
         width: 100vw;
         height: 45vh;

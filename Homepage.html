@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 
-<body>
+<body class="container">
     <div class="clearfix">
         <header class="page-head">
             <div class="socialnav-container">
@@ -31,34 +31,45 @@
                 <button>
                     EXPLORE
                 </button>
-                <h1>DEAL NOW</h1>
+                <h1>Highway Empire</h1>
                 <p>The place to get the best car deals</p>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="aboutus.html">ABOUT</a>
+                        <a href="aboutus.html">ABOUT US</a>
                     </li>
                     <li>
-                        <a href="/blog.html">BLOGS</a>
+                        <a href="/blog.html">OUR BLOG POSTS</a>
                     </li>
                     <li>
                         <a href="car-listing.html">CAR LISTING</a>
                     </li>
                     <li>
-                        <a href="#auction">AUCTION</a>
+                        <a href="#auction">AUCTION 2022</a>
                     </li>
                 </ul>
             </nav>
             <div class="form">
-                <form>
+                <form method="get" action="#">
                     <div class="select">
                         <label for="type">Select Make</label>
                         <select id="cars" name="cars">
-                            <option value="car" selected>Toyota</option>
-                            <option value="car">Honda</option>
-                            <option value="car">Lexus</option>
-                            <option value="car">Nissan</option>
+                            <option selected>Name</option>
+                            <option value="1">Toyota</option>
+                            <option value="2">Honda</option>
+                            <option value="3">Lexus</option>
+                            <option value="4">Nissan</option>
+                            <option value="5">Kia</option>
+                            <option value="6">Acura</option>
+                            <option value="7">Hyundai</option>
+                            <option value="8">Bmw</option>
+                            <option value="9">Corvette</option>
+                            <option value="10">Ferrari</option>
+                            <option value="11">Lamborghinni</option>
+                            <option value="12">Bugatti</option>
+                            <option value="13">Ford</option>
+                            <option value="14">Range</option>
                         </select>
                     </div>
                     <div class="select">
@@ -70,13 +81,26 @@
                     <div class="select">
                         <label for="year">Select Year</label>
                         <select name="year" id="year">
+                            <option>Year</option>
                             <option value="1967">1967</option>
                             <option value="1968">1968</option>
+                            <option value="1969">1969</option>
+                            <option value="1970">1970</option>
+                            <option value="1971">1971</option>
+                            <option value="1972">1972</option>
+                            <option value="1973">1973</option>
+                            <option value="1974">1974</option>
+                            <option value="1975">1975</option>
+                            <option value="1976">1976</option>
+                            <option value="1977">1977</option>
+                            <option value="1978">1978</option>
+                            <option value="1979">1979</option>
+                            <option value="1980">1980</option>
                         </select>
                     </div>
                     <div class="range">
-                        <label for="price">Price range</label>
-                        <input type="range" name="price" id="price">
+                        <label for="price">Price: [$1000-$50000]</label>
+                        <input type="range" name="price" id="price" min="1000" max="50000" step="500">
                     </div>
                     <input type="submit" name="vehicle" value="Search vehicle">
                 </form>
@@ -84,28 +108,34 @@
         </header>
         <main>
             <div class="img-card">
-                <div class="card">
-                    <div class="text">
-                        <h1>Buy A car</h1>
-                        <p>Are you looking for a reliale place to sell your car or make an exchange?<br>
-                            DEAL NOW got you covered.</p>
+                <a href="Gallery.html">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Buy A car</h1>
+                            <p>Are you looking for a reliale place to sell your car or make an exchange?<br>
+                                Highway Empire got you covered.</p>
+                        </div>
+                        <img src="/car deal.jpg" alt="A black audi" width="100%" height="80%">
                     </div>
-                    <img src="/Audi-black.jpg" alt="A black audi" width="100%" height="80%">
-                </div>
-                <div class="card">
-                    <div class="text">
-                        <h1>Sell A Car</h1>
-                        <p>We offer amazing deals to our customers</p>
+                </a>
+                <a href="sell.html">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Sell A Car</h1>
+                            <p>We offer amazing deals to our customers</p>
+                        </div>
+                        <img src="/car sale.jpg" alt="A black lamborghinni" width="100%" height="80%">
                     </div>
-                    <img src="/lamborghinni.png" alt="A black lamborghinni" width="100%" height="80%">
-                </div>
-                <div class="card">
-                    <div class="text">
-                        <h1>Get Services</h1>
-                        <p>looking to fix your ride? DEAL NOW got you covered</p>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Get Services</h1>
+                            <p>We also help in automobile maintainance and repairs at affordable prices</p>
+                        </div>
+                        <img src="repair.jpg" alt="A red Mustang interior" width="100%" height="80%">
                     </div>
-                    <img src="/car-1544342_1920.jpg" alt="A red Mustang interior" width="100%" height="80%">
-                </div>
+                </a>
             </div>
             <div class="about">
                 <div class="about-text">
@@ -131,13 +161,9 @@
             </div>
         </main>
         <footer class="foot">
-            <div class="footer-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis et dolor,
-                perspiciatis hic rerum possimus sunt quod, excepturi aperiam repellendus labore deleniti quae officiis
-                consequatur consectetur asperiores suscipit a! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sunt quam omnis eius fuga distinctio qui minima corrupti esse rem ipsam, molestias eligendi quisquam
-                soluta quidem magnam, ratione perspiciatis maiores explicabo.
-                Iure, autem sunt provident sed esse odio quasi adipisci est vitae delectus facere iusto velit, ex et, ut
-                quisquam aut saepe nisi. Officiis nam delectus fuga quidem modi nesciunt distinctio!</div>
+            <div class="footer-card">
+                <div class="footer-card-caption"><img src="logo.png" alt=""></div>
+            </div>
             <div class="footer-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta maxime,
                 delectus similique animi laborum consequuntur nostrum unde. Pariatur animi, neque non voluptas libero
                 tempore rerum similique deserunt eos doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing

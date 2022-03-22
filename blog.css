@@ -167,7 +167,7 @@
     float: left;
 }
 
-.blog-image>img {
+.blog-image>a>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -240,6 +240,10 @@
     .blog-topic-contents {
         width: 100%;
         height: 20%;
+    }
+    .blog-topic-contents:hover{
+        transform: scaleX(1.2);
+        transition: .3s ease-in;
     }
     .blog-image {
         width: 30%;
@@ -347,6 +351,9 @@
     }
     .blog-contents {
         height: 90%;
+    }
+    .blog-body-content{
+        font-size: 0.8em;
     }
     .sidebar{
         width: 100vw;
